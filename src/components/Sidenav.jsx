@@ -28,10 +28,18 @@ const Sidenav = () => {
 
   // }
   return (
-    <Stack justify="space-between" boxShadow="lg" maxW="16rem" h="100vh">
+    <Stack justify="space-between"   h="100vh"
+    boxShadow={{
+      base:"none",
+      lg:"lg"
+    }} 
+    w={{
+      base:"full",
+      w:"16rem"
+    }}>
     <Box>
     <Heading textAlign="center" fontSize="20px" as="h1" pt="3.5rem">
-        CRYPTO DASHBOARD
+        CRYPTO PROJECT
       </Heading>
       <Box mt="6" mx="3">
         {navLinks.map((nav) => (

@@ -1,10 +1,11 @@
-import React from 'react'
-import Sidenav from '../../components/Sidenav'
+import DashboardLayout from "../../components/DashboardLayout"
 
-const Dashboard = () => {
+
+const Dashboard = ({}) => {
   return (
-   
-        <Sidenav/>
+    <DashboardLayout title="Dashboard">
+    <div>How are you </div>
+</DashboardLayout>
    
   )
 }
